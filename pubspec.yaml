@@ -1,5 +1,5 @@
 name: mobile_device_identifier
-description: A new Flutter plugin project.
+description: Flutter package to obtain unique ID from mobile device (android / ios) -- Android minSdkVersion = 21, iOS minimum version = 11
 version: 0.0.1
 homepage:
 
@@ -23,6 +23,8 @@ flutter:
       android:
         package: com.alfanthariq.mobile_device_identifier
         pluginClass: MobileDeviceIdentifierPlugin
+      ios:
+        pluginClass: SwiftMobileDeviceIdentifierPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
