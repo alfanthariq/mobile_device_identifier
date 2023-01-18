@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'dart:async';
 
@@ -50,9 +52,17 @@ class _MyAppState extends State<MyApp> {
         body: Center(
           child: Padding(
               padding: const EdgeInsets.all(10),
-              child: Text(
-                'Device ID : \n\n$_deviceId',
-                textAlign: TextAlign.center,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text('Device ID : \n$_deviceId'),
+                  const Divider(height: 30, color: Colors.transparent),
+                  Builder(builder: (context) {
+                    String encoded = base64.encode(utf8.encode(_deviceId));
+                    return Text("Device ID Encoded : \n$encoded");
+                  })
+                ],
               )),
         ),
       ),
