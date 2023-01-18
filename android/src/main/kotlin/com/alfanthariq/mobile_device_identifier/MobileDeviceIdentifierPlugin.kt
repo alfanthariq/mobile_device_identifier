@@ -37,7 +37,6 @@ class MobileDeviceIdentifierPlugin: FlutterPlugin, MethodCallHandler {
       return try {
           val wvDrm = MediaDrm(wideVineUuid)
           val wideVineId = wvDrm.getPropertyByteArray(MediaDrm.PROPERTY_DEVICE_UNIQUE_ID)
-          //Base64.encodeToString(wideVineId, Base64.DEFAULT)
           wideVineId.joinToString(":") { String.format("%02X", it) }
       } catch (e: java.lang.Exception) {
           null
