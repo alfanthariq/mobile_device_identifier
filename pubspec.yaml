@@ -1,7 +1,8 @@
 name: mobile_device_identifier
-description: Flutter package to obtain unique ID from mobile device (android / ios) -- Android minSdkVersion = 21, iOS minimum version = 11
+description: Flutter package to obtain unique ID from mobile device (android / ios)
 version: 0.0.1
 homepage:
+repository: https://github.com/alfanthariq/mobile_device_identifier
 
 environment:
   sdk: '>=2.18.5 <3.0.0'
