@@ -1,4 +1,6 @@
-group 'com.example.mobile_device_identifier'
+package android
+
+group 'com.alfanthariq.mobile_device_identifier'
 version '1.0-SNAPSHOT'
 
 buildscript {
@@ -26,7 +28,7 @@ apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 32
-    namespace 'com.example.mobile_device_identifier'
+    namespace 'com.alfanthariq.mobile_device_identifier'
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
