@@ -1,5 +1,3 @@
-package android
-
 group 'com.alfanthariq.mobile_device_identifier'
 version '1.0-SNAPSHOT'
 
