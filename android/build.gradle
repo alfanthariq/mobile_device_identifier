@@ -26,6 +26,7 @@ apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 32
+    namespace 'com.example.mobile_device_identifier'
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
