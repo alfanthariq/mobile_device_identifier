@@ -16,7 +16,6 @@ public class SwiftMobileDeviceIdentifierPlugin: NSObject, FlutterPlugin {
         result(self.getDeviceIdentifierFromKeychain(key: key))
     default:
         result(FlutterMethodNotImplemented)
-        fatalError()
     }
   }
 
