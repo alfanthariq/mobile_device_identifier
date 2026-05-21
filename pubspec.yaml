@@ -1,12 +1,12 @@
 name: mobile_device_identifier
 description: Flutter package to obtain unique ID from mobile device (android / ios)
-version: 0.0.3
+version: 0.0.4
 homepage:
 repository: https://github.com/alfanthariq/mobile_device_identifier
 
 environment:
-  sdk: '>=2.18.5 <4.0.0'
-  flutter: ">=2.5.0"
+  sdk: ^3.11.0
+  flutter: ">=3.41.0"
 
 dependencies:
   flutter:

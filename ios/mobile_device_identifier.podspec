@@ -4,19 +4,18 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'mobile_device_identifier'
-  s.version          = '0.0.1'
-  s.summary          = 'A new Flutter plugin project.'
+  s.version          = '0.0.4'
+  s.summary          = 'A Flutter plugin that returns a stable per-install device identifier on iOS and Android.'
   s.description      = <<-DESC
-A new Flutter plugin project.
+A Flutter plugin that returns a stable per-install device identifier on iOS and Android.
                        DESC
-  s.homepage         = 'http://alfanthariq.com'
+  s.homepage         = 'https://github.com/alfanthariq/mobile_device_identifier'
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'Nafi Alfanthariq' => 'mnalfanthariq@gmail.com' }
   s.source           = { :path => '.' }
-  s.source_files = 'Classes/**/*'
+  s.source_files     = 'mobile_device_identifier/Sources/mobile_device_identifier/**/*.swift'
   s.dependency 'Flutter'
-  s.dependency 'JNKeychain'
-  s.platform = :ios, '11.0'
+  s.platform = :ios, '12.0'
 
   # Flutter.framework does not contain a i386 slice.
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
