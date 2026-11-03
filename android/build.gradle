@@ -9,8 +9,8 @@ buildscript {
     }
 
     dependencies {
-        classpath("com.android.tools.build:gradle:8.9.1")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version")
+        classpath 'com.android.tools.build:gradle:8.13.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
 
@@ -25,9 +25,8 @@ apply plugin: "com.android.library"
 apply plugin: "kotlin-android"
 
 android {
-    namespace = "com.alfanthariq.mobile_device_identifier"
-
-    compileSdk = 36
+    compileSdkVersion 36
+    namespace 'com.alfanthariq.mobile_device_identifier'
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
